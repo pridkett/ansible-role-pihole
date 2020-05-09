@@ -1,0 +1,9 @@
+---
+- name: Install Dependencies
+  apt:
+    name:
+      - docker.io
+      - docker-compose 
+    state: present
+    update_cache: true
+  become: yes
